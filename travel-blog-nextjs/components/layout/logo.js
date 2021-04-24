@@ -1,7 +1,9 @@
+import classes from './logo.module.css'
+
 function Logo(props){
     return (
-        <div>
-            Logo
+        <div className={classes.logo}>
+            PassportsHub
         </div>
     )
 }
