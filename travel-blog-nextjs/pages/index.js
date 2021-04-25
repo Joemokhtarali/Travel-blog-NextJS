@@ -1,11 +1,12 @@
 import { Fragment } from "react";
 import Hero from "../components/home-page/Hero";
+import FeaturedPosts from "../components/home-page/featured-posts";
 
 function HomePage() {
   return (
     <Fragment>
       <Hero />
-      {/* <FeaturedPosts /> */}
+      <FeaturedPosts />
     </Fragment>
   );
 }
