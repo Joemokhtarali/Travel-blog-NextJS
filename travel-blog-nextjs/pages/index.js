@@ -13,7 +13,7 @@ function HomePage(props) {
   return (
     <Fragment>
       <Hero />
-      <FeaturedPosts posts={props.posts}/>
+      <FeaturedPosts posts={props.posts}/> 
     </Fragment>
   );
 }

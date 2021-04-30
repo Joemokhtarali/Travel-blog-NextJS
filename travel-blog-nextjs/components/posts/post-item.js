@@ -24,7 +24,7 @@ function PostItem(props) {
           <div className={classes.content}>
             <h3>{title}</h3>
             <time>{formattedDate}</time>
-            <p>{content}</p>
+            <p>{content}</p> 
           </div>
         </a>
       </Link>
