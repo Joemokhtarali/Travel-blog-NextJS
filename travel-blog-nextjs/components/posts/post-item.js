@@ -13,6 +13,7 @@ function PostItem(props) {
 
   const imagePath = `/images/posts/${slug}/${image}`
   const linkPath = `/posts/${slug}`
+  
 
   return (
     <li className={classes.post}>
@@ -33,5 +34,3 @@ function PostItem(props) {
 }
 
 export default PostItem;
-
-// Country, date, image, content, youtube link, slug,
