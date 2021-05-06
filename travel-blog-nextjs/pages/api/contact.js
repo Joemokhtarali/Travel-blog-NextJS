@@ -10,7 +10,7 @@ function handler(req, res) {
       !message ||
       message.trim() === ""
     ) {
-      res.status(422).json({message: 'invalid input'})
+      res.status(422).json({ message: "invalid input" });
       return;
     }
 
@@ -18,11 +18,11 @@ function handler(req, res) {
     const newMessage = {
       email,
       name,
-      message
-    }
-    console.log(newMessage)
-    res.status(201).json( {message: 'success', message: newMessage} )
+      message,
+    };
+    console.log(newMessage);
+    res.status(201).json({ message: "success", message: newMessage });
   }
 }
 
-export default handler
+export default handler;
