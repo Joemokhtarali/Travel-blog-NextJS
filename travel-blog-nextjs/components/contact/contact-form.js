@@ -9,11 +9,22 @@ function ContactForm() {
 
   function sendMessageHandler(event) {
     event.preventDefault();
-    axios.post("/api/contact", {
-      email: enteredEmail,
-      name: enteredName,
-      message: enteredMessage,
+    fetch("/api/contact", {
+      method: "POST",
+      body: JSON.stringify({
+        email: enteredEmail,
+        name: enteredName,
+        message: enteredMessage,
+      }),
+      headers: {
+        "Content-type": "application/json",
+      },
     });
+    // axios.post("/api/contact", {
+    //   email: enteredEmail,
+    //   name: enteredName,
+    //   message: enteredMessage,
+    // });
   }
 
   return (
